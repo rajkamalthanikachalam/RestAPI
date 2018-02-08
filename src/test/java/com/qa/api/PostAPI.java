@@ -53,7 +53,7 @@ public void postAPI_WithHeader() throws ClientProtocolException, IOException{
 	String jsonString = mapper.writeValueAsString(user);
 	System.out.println("User Name : "+jsonString);
 	
-	httpResponse = obj.post(URL, jsonString, headermap);
+	httpResponse = obj.post(Request_URL, jsonString, headermap);
 	
 	//Status code
 	int StatusCode = httpResponse.getStatusLine().getStatusCode();		
